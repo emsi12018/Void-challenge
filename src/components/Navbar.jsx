@@ -73,7 +73,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full">
+      <header className="fixed inset-x-0 top-0 z-50 w-full">
         <div className="border-b border-black/5 bg-[rgba(255,255,255,0.95)] shadow-[0_1px_2px_rgba(0,0,0,0.05)] backdrop-blur-[12px]">
           <div className="mx-auto flex min-h-[72px] w-full max-w-[1440px] items-center px-4 sm:px-6 lg:px-[80px]">
             <div className="relative flex w-full items-center justify-between gap-[16px] py-[16px]">
@@ -151,6 +151,8 @@ function Navbar() {
           </div>
         </div>
       </header>
+
+      <div aria-hidden="true" className="h-[72px] w-full" />
 
       <button
         type="button"
