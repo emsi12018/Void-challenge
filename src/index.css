@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen w-full overflow-x-hidden bg-[#f7f6f2] font-sans text-slate-900 antialiased;
+  }
+
+  #root {
+    @apply min-h-screen w-full;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  button,
+  [role='button'] {
+    @apply cursor-pointer;
+  }
+}
